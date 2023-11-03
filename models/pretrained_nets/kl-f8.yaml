@@ -1,0 +1,13 @@
+params:
+  embed_dim: 4
+  lossconfig:
+    disc_start: 10001
+    kl_weight: 1.0e-06
+    disc_weight: 0.5
+  ddconfig:
+    z_channels: 4
+    in_channels: 3
+    out_ch: 3
+    ch: 128
+    ch_mult: [1, 2, 4, 4]
+    num_res_blocks: 2

@@ -1,0 +1,12 @@
+paths:
+  pretrained_ckpt: ./models/pretrained_nets/kl-f8.ckpt
+  pretrained_yaml: ./models/pretrained_nets/kl-f8.yaml
+  conditional_ckpt: ./models/conditional_nets/model_epoch000019.ckpt
+  dataset_path: ./datasets/test
+  results_path: ./datasets/test/results
+params:
+  batch_size: 1
+  dataset_size: 1
+  use_entire_dataset: True
+  use_sequential_dataset: True
+  max_size: 768

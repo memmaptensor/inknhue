@@ -1,0 +1,7 @@
+paths:
+  pretrained_ckpt: ./models/pretrained_nets/kl-f8.ckpt
+  pretrained_yaml: ./models/pretrained_nets/kl-f8.yaml
+  conditional_ckpt: ./models/conditional_nets/model_epoch000019.ckpt
+  shader_ckpt: ./models/pretrained_nets/shader.ckpt
+params:
+  max_size: 768

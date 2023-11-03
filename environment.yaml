@@ -1,0 +1,27 @@
+name: inknhue
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - opencv-contrib-python>=4.1.0.25
+      - tensorflow>=2.12.0
+      - gradio>=3.20.1
+      - scikit-learn>=0.23.1
+      - scikit-image>=0.14.5
+      - tqdm
+      - numpy<1.24
+      - torch>=2.0.1
+      - torchvision>=0.15.2
+      - torchtext>=0.15.2
+      - --extra-index-url https://download.pytorch.org/whl/cu118
+      - rich
+      - matplotlib
+      - einops
+      - Pillow
+      - accelerate
+      - omegaconf
+      - wandb
+      - huggingface-hub
+      - taming-transformers

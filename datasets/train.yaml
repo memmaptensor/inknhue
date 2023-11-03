@@ -1,0 +1,23 @@
+paths:
+  pretrained_ckpt: ./models/pretrained_nets/kl-f8.ckpt
+  pretrained_yaml: ./models/pretrained_nets/kl-f8.yaml
+  dataset_path: ./datasets
+  checkpoint_path: ./models/conditional_nets
+params:
+  base_lr: 4.5e-06
+  betas: [0.5, 0.9]
+  epoch: 20
+  batch_size: 4
+  dataset_size: 58000
+  use_entire_dataset: True
+  use_sequential_dataset: False
+  unlock_decoder: True
+  size: 512
+  crop_size: 256
+  log_steps: 100
+  checkpoint_epochs: 2
+wandb:
+  project: inknhue
+  config:
+    optimizer: AdamW
+    architecture: VAE-GAN
