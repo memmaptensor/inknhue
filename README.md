@@ -1,8 +1,8 @@
 # inkn'hue: Enhancing Manga Colorization from Multiple Priors with Alignment Multi-Encoder VAE
 
 [![License](https://img.shields.io/github/license/rossiyareich/inknhue)](https://github.com/rossiyareich/inknhue/blob/main/LICENSE)
-
-[arXiv preprint]() | [Hugging Face](https://huggingface.co/rossiyareich/inknhue)
+[![arXiv preprint](https://img.shields.io/badge/arXiv_preprint-b31b1b?logo=arXiv)]()
+[![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-ffd226)](https://huggingface.co/rossiyareich/inknhue)
 
 <p align="center">
 <img src="assets/header.jpg"/>  
