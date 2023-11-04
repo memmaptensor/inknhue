@@ -126,7 +126,7 @@ Learn more about Style2Paints here: [lllyasviel/style2paints](https://github.com
 - Style2Paints: https://github.com/lllyasviel/style2paints
 
 ## BibTeX
-If you use our work in your research, please cite our arXiv article:
+If you use our work in your research, please cite our arXiv article
 ```
 
 ```
