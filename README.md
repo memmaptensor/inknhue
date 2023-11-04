@@ -120,6 +120,11 @@ Learn more about Style2Paints here: [lllyasviel/style2paints](https://github.com
 <em>Additional colorization results are shown.</em>
 </p>
 
+## References
+- Tag2Pix: https://github.com/blandocs/Tag2Pix
+- manga-colorization-v2: https://github.com/qweasdd/manga-colorization-v2
+- Style2Paints: https://github.com/lllyasviel/style2paints
+
 ## BibTeX
 If you use our work in your research, please cite our arXiv article:
 ```
