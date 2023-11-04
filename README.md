@@ -37,7 +37,7 @@ This repository contains the official PyTorch implementation of [inkn'hue]()
 - taming-transformers
 
 ## Setup
-1. Clone this repository:
+1. Clone this repository
 ``` shell
 git clone https://github.com/rossiyareich/inknhue.git
 cd inknhue
@@ -55,11 +55,11 @@ git clone https://huggingface.co/rossiyareich/inknhue models
 ```
 
 ## Inference using Gradio
-From the project root folder, run this shell command:
+From the project root folder, run
 ``` shell
 python app.py
 ```
-Then access the app [locally](http://127.0.0.1:7860) with a browser.
+Then access the app [locally](http://127.0.0.1:7860) with a browser
 
 You'll need your original b&w manga and a Style2PaintsV4.5 colorized version for the model inputs. The model performs best with `blended_smoothed_careless` priors.
 Learn more about Style2Paints here: [lllyasviel/style2paints](https://github.com/lllyasviel/style2paints)
