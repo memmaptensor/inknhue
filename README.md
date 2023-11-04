@@ -7,7 +7,7 @@
 <p align="center">
 <img src="assets/header.jpg"/>  
 <br>
-<em>Examples of original grayscale inputs (top-left) and rough color inputs (bottom-left). Final colorizations (right) are from our multi-encoder VAE outputs blended with rough color inputs in CIELAB color space ($`\lambda_{a*b*}=0.8`$)</em>
+<em><b>Examples of original grayscale inputs (top-left) and rough color inputs (bottom-left).</b> Final colorizations (right) are from our multi-encoder VAE outputs blended with rough color inputs in CIELAB color space</em>
 </p>
 
 This repository contains the official PyTorch implementation of [inkn'hue]()
@@ -61,15 +61,16 @@ python app.py
 ```
 Then access the app [locally](http://127.0.0.1:7860) with a browser.
 
-You'll need your original b&w manga and a Style2PaintsV4.5 colorized version for the model inputs. The model performs best with `blended_smoothed_careless` outputs.
+You'll need your original b&w manga and a Style2PaintsV4.5 colorized version for the model inputs. The model performs best with `blended_smoothed_careless` priors.
 Learn more about Style2Paints here: [lllyasviel/style2paints](https://github.com/lllyasviel/style2paints)
 
 # Pipeline
 <p align="center">
 <img src="assets/overview.jpg"/>  
 <br>
-<em><b>Expanded overview of the framework.</b> Our pipeline utilizes trained parameters from related works including Style2Paints (shown in green), manga-colorization-v2 (shown as "Shading generator"), and Tag2Pix extractor (shown as "SEResNeXt LFE" (Local Feature Extractor)). The framework aligns results from the shading generator (shaded grayscale) and Style2Paints (rough-colored) using an alignment variational autoencoder and an auxiliary alignment encoder (shown in violet). The input consists of the original pages (bottom-leftmost), along with the color hints and/or reference images (top-leftmost) that are to be used as local and global color hints, respectively. The outputs from the last-stage model are then interpolated with the rough-colored outputs (shown in red) based on a user-defined interpolation value $`\lambda_{a*b*}`$ to produce the most appealing final colorized results (top-rightmost).</em>
+<em><b>Expanded overview of the framework.</b> Our pipeline utilizes trained parameters from related works including Style2Paints (shown in green), manga-colorization-v2 (shown as "Shading generator"), and Tag2Pix extractor (shown as "SEResNeXt LFE" (Local Feature Extractor)). The framework aligns results from the shading generator (shaded grayscale) and Style2Paints (rough-colored) using an alignment variational autoencoder and an auxiliary alignment encoder (shown in violet). The input consists of the original pages (bottom-leftmost), along with the color hints and/or reference images (top-leftmost) that are to be used as local and global color hints, respectively. The outputs from the last-stage model are then interpolated with the rough-colored outputs (shown in red) based on a user-defined interpolation value to produce the most appealing final colorized results (top-rightmost).</em>
 </p>
+<p align="center">
 <img src="assets/alignment.jpg"/>  
 <br>
 <em><b>Overview of the stages of our colorization framework.</b> Starting with the original image (1), the shading model generates a shaded grayscale version (3). Alongside this, the colorization model produces an initial rough-colored version (4) guided by additional cues provided by user-inputted color hints and/or a reference image (2). The combination model combines both the shaded (3) and rough-colored (4) stages, interpolating colors from the latter to produce the final colorization result (5).</em>
