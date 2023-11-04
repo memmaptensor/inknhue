@@ -64,7 +64,7 @@ Then access the app [locally](http://127.0.0.1:7860) with a browser.
 You'll need your original b&w manga and a Style2PaintsV4.5 colorized version for the model inputs. The model performs best with `blended_smoothed_careless` priors.
 Learn more about Style2Paints here: [lllyasviel/style2paints](https://github.com/lllyasviel/style2paints)
 
-# Pipeline
+## Pipeline
 <p align="center">
 <img src="assets/overview.jpg"/>  
 <br>
@@ -76,7 +76,7 @@ Learn more about Style2Paints here: [lllyasviel/style2paints](https://github.com
 <em><b>Overview of the stages of our colorization framework.</b> Starting with the original image (1), the shading model generates a shaded grayscale version (3). Alongside this, the colorization model produces an initial rough-colored version (4) guided by additional cues provided by user-inputted color hints and/or a reference image (2). The combination model combines both the shaded (3) and rough-colored (4) stages, interpolating colors from the latter to produce the final colorization result (5).</em>
 </p>
 
-# Architecture
+## Architecture
 <p align="center">
 <img src="assets/architecture.jpg"/>  
 <br>
