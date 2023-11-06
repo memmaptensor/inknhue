@@ -128,5 +128,12 @@ Learn more about Style2Paints here: [lllyasviel/style2paints](https://github.com
 ## BibTeX
 If you use our work in your research, please cite our arXiv article
 ```
-
+@misc{jiramahapokee2023inknhue,
+      title={inkn'hue: Enhancing Manga Colorization from Multiple Priors with Alignment Multi-Encoder VAE}, 
+      author={Tawin Jiramahapokee},
+      year={2023},
+      eprint={2311.01804},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
