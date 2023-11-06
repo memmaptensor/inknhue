@@ -1,7 +1,7 @@
 # inkn'hue: Enhancing Manga Colorization from Multiple Priors with Alignment Multi-Encoder VAE
 
 [![License](https://img.shields.io/github/license/rossiyareich/inknhue)](https://github.com/rossiyareich/inknhue/blob/main/LICENSE)
-[![arXiv preprint](https://img.shields.io/badge/arXiv_preprint-b31b1b?logo=arXiv)]()
+[![arXiv preprint](https://img.shields.io/badge/arXiv_preprint-b31b1b?logo=arXiv)](https://arxiv.org/abs/2311.01804)
 [![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-ffd226)](https://huggingface.co/rossiyareich/inknhue)
 
 <p align="center">
@@ -10,7 +10,7 @@
 <em><b>Examples of original grayscale inputs (top-left) and rough color inputs (bottom-left).</b> Final colorizations (right) are from our multi-encoder VAE outputs blended with rough color inputs in CIELAB color space</em>
 </p>
 
-This repository contains the official PyTorch implementation of [inkn'hue]()
+This repository contains the official PyTorch implementation of [inkn'hue](https://arxiv.org/abs/2311.01804)
 
 > **inkn'hue: Enhancing Manga Colorization from Multiple Priors with Alignment Multi-Encoder VAE**<br>
 > 
