@@ -1,16 +1,9 @@
 name: inknhue
 channels:
   - defaults
-  - pytorch
-  - nvidia
 dependencies:
   - python=3.10
   - pip
-  - pytorch
-  - torchvision
-  - torchaudio
-  - torchtext
-  - pytorch-cuda=11.8
   - pip:
       - opencv-contrib-python>=4.1.0.25
       - tensorflow>=2.12.0
